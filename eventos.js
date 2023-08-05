@@ -6,4 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
         div.addEventListener("click", ()=> {
                 alert("Hola! Soy el div");
         })
+        button.addEventListener("click", function(e) {
+                alert("Hola!");
+                e.stopPropagation()
+        })
 })
